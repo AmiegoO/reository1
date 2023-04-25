@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" method="#">
+        <!--LEGEND AND FIELDSET-->
+        <fieldset>
+            <legend>Your address</legend>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required style="margin-left: 99px; padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required style="margin-left: 101px; padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+            </div>
+
+            <div>
+                <label for="street">Street</label>
+                <input type="text" id="street" style="margin-left: 134px;padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+            </div>
+
+            <div>
+                <label for="city">City</label>
+                <input type="text" id="city" style="margin-left: 143px;padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional details</legend>
+            <div>
+                <label for="biography" style="float: left; margin-top: 30px;">Biography</label>
+                <textarea name="biography" id="biography" cols="25" rows="3" style="margin-left: 104px;padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+                </textarea>
+            </div>
+
+            <div>
+                <label for="image">Image</label>
+                <input type="file" id="file" style="margin-left: 131px; padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+            </div>
+
+            <div>
+                <label for="number">Age Group</label>
+                <input type="number" id="number" min="0" max="9" style="margin-left: 100px; padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests</legend>
+            <div>
+             <label for="hobbies">Hobbies</label>
+             <select name="hobbies" id="hobbies" style="margin-left: 120px; padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+                    <option value="playingSoccer">Playing soccer</option>
+                    <option value="dancing">Dancing</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="movies">Watching movies</option>
+             </select>
+            </div>
+
+            <div>
+                <label for="car">Favourite car</label>
+                <select name="car" id="car" size="1" style="margin-left: 88px; padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+                    <option value="volvo">Volvo</option>
+                    <option value="camry">Camry</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="transport" style="float: left; margin-top: 25px;">Favourite public transport</label>
+                <select name="transport" id="transport" size="3" style="margin-left: 8px; padding: 12px, 20px; margin-top: 10px; margin-bottom: 10px;">
+
+                    <optgroup label="Ground">
+                        <option value="train">Train</option>
+                        <option value="bus">Bus</option>
+                    </optgroup>
+
+                    <optgroup label="Water">
+                        <option value="ship">Ship</option>
+                        <option value="boat">Boat</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
